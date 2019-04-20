@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="the room.css">
 </head>
 <body>
-    <audio source src="the room begin.mp3" controls autoplay></audio>
-    <audio id="audio" src="the room.mp3" ></audio>
+    <!-- Audio -->
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio src="./1.mp3" id="myAudio" controls autoplay></audio>
+    <!--  -->
+    <audio src="the_room.mp3" id="audio2"></audio>
     <div id = "box"></div>
         <div id="back-ground">
         <div id = "papers"></div>
@@ -18,9 +21,10 @@
         <div id="mirror"></div>
         <div id="drawers"></div>
         <div id="door"></div>
- 
         <script src="the room.js"></script>
- 
     </div>
+    <script>
+        var audio2 = document.getElementById('audio2');
+    </script>
 </body>
 </html>

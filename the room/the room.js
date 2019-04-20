@@ -1,7 +1,7 @@
 var table = document.getElementById("table");
 var background = document.getElementById("back-ground");
 var back = document.getElementById('back');
-
+var audio = document.getElementById('myAudio')
 // Initial:
 back.style.display = 'none';
 
@@ -39,12 +39,13 @@ table.addEventListener('click',function(e){
     });
     backButton1();
 });
-var audio = document.getElementById("audio");
+var audio2 = document.getElementById("audio2");
 var mirror = document.getElementById("mirror");
 mirror.addEventListener('click',function(e){
+    audio.pause()
     back.style.display = "block";
     background.setAttribute('class',"scaleMirror");
-    audio.play();
+    audio2.play();
     backButton()
 });
 var drawers = document.getElementById("drawers");
@@ -119,6 +120,7 @@ function backButton() {
     back.addEventListener('click', function(e){
         background.removeAttribute('class', 'scaleTable');
         back.style.display = "none";
-        audio.pause()
+        audio2.pause()
+        audio.play()
     })
 }
