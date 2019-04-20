@@ -1,0 +1,1 @@
+a = ["blue", "red", "teal", "green"] 
